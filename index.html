@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <link href="src/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <title>Quebra-cabeça</title>
+    </head>
+
+    <body class="body">
+
+        <!-- game canvas -->
+        <canvas id="myCanvas"></canvas>
+
+        <!-- main menu -->
+        <div id="menuItems" class="menu">
+            <div id="menu">
+                <div id="controls">
+                    <img src="img/title.png" class="titleimage" type="image/png"/>
+                    
+                    <!-- seletor numero de pecas -->
+                    <select id="difficulty" class="form-select mb-2">
+                        <option selected>Escolha o número de peças:</option>
+                        <option value="nine">9</option>
+                        <option value="sixteen">16</option>
+                        <option value="twofive">25</option>
+                        <option value="threesix">36</option>
+                        <option value="hundred">100</option>
+                        <option value="thousand">1000</option>
+                    </select>
+                    
+                    <!-- seletor fonte da imagem -->
+                    <select id="imageSource" class="form-select mb-2">
+                        <option selected value="none">Escolha a origem da imagem:</option>
+                        <option value="padrao">Padrões</option>
+                        <option value="infantil">Infantil</option>
+                        <option value="upload">Upload</option>
+                        <option value="webcam">Webcam</option>
+                    </select>
+                    
+                    <!-- image upload -->
+                    <input accept="image/*" type="file" name="filename" id="imageInput">
+                    
+                    <!-- imagens padrao-->
+                    <select class="form-select form-select-lg mb-2" multiple size="1" id="padraoImages">
+                        <option value="padrao/yerka.jpg" class="images_select im1"></option>
+                        <option value="padrao/jacek.jpg" class="images_select im2"></option>
+                        <option value="padrao/daughter.jpg" class="images_select im3"></option>
+                        <option value="padrao/skyline.jpg" class="images_select im4"></option>
+                    </select>
+
+                    <!-- imagens infantil -->
+                    <select class="form-select form-select-lg mb-2" multiple size="1" id="infantilImages">
+                        <option value="infantil/chapeuzinho.jpg" class="images_select if1"></option>
+                        <option value="infantil/cirandinha.jpg" class="images_select if2"></option>
+                        <option value="infantil/daniel.jpg" class="images_select if3"></option>
+                        <option value="infantil/morph.jpg" class="images_select if4"></option>
+                        <option value="infantil/pawpatrol.jpg" class="images_select if5"></option>
+                        <option value="infantil/pjmask.jpg" class="images_select if6"></option>
+                        <option value="infantil/rubymax.jpg" class="images_select if7"></option>
+                    </select>
+                    <br>
+                    <!-- botao iniciar -->
+                    <button class="button" id="startButton">Iniciar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- end screen -->
+        <div id="endScreen" class="menu">
+            <img type="image/png" src="img/title.png"/>
+                    <br>
+                    <br>
+            <div id="scoreValue"></div>
+            <br>
+            <button class="button" id="endButton">Menu</button>
+        </div>
+
+        <!-- time counter -->
+        <div id="time"></div>
+
+        <!-- bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" type="text/javascript" nonce="rAnd0m123"></script>
+        <!-- game logic -->
+        <script src="src/scripts.js" type="text/javascript" nonce="rAnd0m123"></script>
+    </body>
+
+</html>

@@ -1,0 +1,121 @@
+.body{
+    margin: 0;
+    overflow: hidden; /*no scroll bar*/
+    overscroll-behavior: none;  /* prevents refreshing the page when touch-scroll down */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1b1a;
+}
+
+.titleimage{
+    width: 90%;
+}
+
+.menu{
+    width: 80vmin;
+    position: absolute;
+    /* position on screen center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 5vmin; /* 5% between the width and height of the window*/
+    border: 1vmin rgba(0, 0, 0, 0.6) solid;
+    border-radius: 14px;
+}
+
+.button{
+    background: rgb(123, 146, 196);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius:10px;
+    border: none;
+    display: inline;
+}
+
+.button:hover{
+    background: orange;
+    color: black;
+}
+
+
+
+#time{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: whitesmoke;
+}
+
+#imageInput{
+    padding: 10px;
+    margin-bottom: 10px;;
+    font-size: 3.5vmin;
+    cursor: pointer;
+    border: none;
+    border-radius: 1vmin;
+    color: whitesmoke;
+    background-color: gray;
+    display: none;
+}
+
+.images_select{
+    background-color: gray;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:18rem;
+    text-align: center;
+    font-size: 2rem;
+    color:whitesmoke;
+    padding:0px;
+    margin:0;
+}
+
+#padraoImages,
+#infantilImages{
+    width: 60%;
+    cursor: pointer;
+    scrollbar-width: thin;
+    background-color:gray;
+    border: none;
+    margin-top: 15px;
+}
+
+#imageSource,
+#difficulty{
+    width: 50%;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 15px;
+    left:50;
+    right:50;
+}
+
+
+#controls{
+    font-size: 2rem;
+}
+
+#endScreen{
+    display: none;
+}
+#endScreen img{
+    width: 90%;
+}
+/* imagens padroes */
+.im1{background-image: url(../img/boards/padrao/yerka.jpg);}
+.im2{background-image: url(../img/boards/padrao/jacek.jpg);}
+.im3{background-image: url(../img/boards/padrao/daughter.jpg);}
+.im4{background-image: url(../img/boards/padrao/skyline.jpg);}
+
+/* imagens infantis */
+.if1{background-image: url(../img/boards/infantil/chapeuzinho.jpg);}
+.if2{background-image: url(../img/boards/infantil/cirandinha.jpg);}
+.if3{background-image: url(../img/boards/infantil/daniel.jpg);}
+.if4{background-image: url(../img/boards/infantil/morph.jpg);}
+.if5{background-image: url(../img/boards/infantil/pawpatrol.jpg);}
+.if6{background-image: url(../img/boards/infantil/pjmask.jpg);}
+.if7{background-image: url(../img/boards/infantil/rubymax.jpg);}
