@@ -10,7 +10,7 @@ This is a web-based puzzle game built using HTML5 Canvas and JavaScript. The gam
 - Select the number of puzzle pieces you want to play with, ranging from 9 to 1000 pieces.
 - Enjoy interactive sound effects created using JavaScript synth audio.
 - Compatible with both mouse and touchscreen inputs for seamless gameplay.
-- Play the game online by visiting the [Live Version](https://tarsogalvao.ddns.net/games/puzzle/)
+- Play the game online by visiting the [Live Version](https://tarsogalvao.ddns.net/v1/games/puzzle/)
 
 ## How to Play
 
